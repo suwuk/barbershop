@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.hdr {
+    float: left;
+}
+
+main {
+    overflow: auto;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+nav a {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.Button {
+    color: white;
+    background-color: #383838;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: 8px;
+}
+  
+.Button:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+} 
+
+#Home {
+    position: relative;
+}
+
+#Home img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#Book {
+    position: absolute;
+    bottom: 80px;
+    left: 35px;
+    border-radius: 15px;
+    width: 189px;
+    height: 44px;
+    background-color: #ffffff;
+    opacity: 62%;
+}
+
+.Services h2 {
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.Service {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.srv img{
+    height: 162px;
+}
+
+.srv {
+    margin: 0 20px 20px 50px;
+    padding: 60px 0;
+    flex-basis: 25%;
+    width: 280px;
+    height: 433px;
+    border: 5px solid #383838 ;
+    border-radius: 32px;
+}
+
+.desc_srv {
+    margin-top: 30px;
+    height: 100px;
+    width: 80%;
+    background-color: #383838;
+    color: #ffffff;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+
+#Products {
+    height: 709px;
+    background-color: #273036;
+    margin-top: -37px;
+}
+
+#Products h2 {
+    padding-top: 100px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.Product {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 150px;
+    color: #ffffff;
+}
+
+.prd img {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+}
+
+.harga {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.prd {
+    /* flex-basis: 25%; */
+    margin: 50px 30px;
+    width: 300px;
+    height: 400px;
+}
+
+.buy_now {
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 60px;
+    width: 160px;
+    margin: -120px auto;
+}
+
+#Hair_Artist h2 {
+    padding-top: 100px;
+    font-size: 40px;
+    color: #000000;
+}
+
+.Heroes {
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.hero {
+    margin: 50px 30px;
+}
+
+.hero img {
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+}
+
+.hero p {
+    font-size: 23px;
+}
+
+#About_Us {
+    position: relative;
+    color: #ffffff;
+}
+
+#About_Us img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#About_Us h1 {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    opacity: 63%;
+}
+
+#About_Us p {
+    position: absolute;
+    width: 40%;
+    top: 340px;
+    left: 50px;
+    opacity: 63%;
+    font-weight: lighter;
+}
+
+#Contact_Us h2 {
+    padding-top: 100px;
+    font-size: 40px;
+    color: #000000;
+}
+
+input,textarea {
+    color: rgb(0, 0, 0);
+    height: 50px;
+    width: 400px;
+    background-color: #d4d4d4;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+input[type="text"],textarea:focus {
+    outline: none;
+}
+
+.Pesan {
+    float: left;
+    width: 50%;
+    padding: 80px 0 80px 90px;
+
+}
+
+.masuk::-webkit-input-placeholder{
+    padding-left: 20px;
+}
+
+#Submit,#Reset {
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 40px;
+    height: 50px;
+    width: 150px;
+    box-shadow: 2px 4px 20px #050505;
+}
+
+#Submit {
+    background-color: #12dd00;
+}
+
+#Reset {
+    background-color: #E80000;
+
+}
+
+.sosmed {
+    float: right;
+    padding: 0 100px;
+    width: 50%;
+    color: #000000;
+    margin-top: -30px;
+}
+
+.sosmed h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.icons {
+    padding: 50px;
+    float: left;
+}
+
+footer {
+    height: 71px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: lighter;
+}
