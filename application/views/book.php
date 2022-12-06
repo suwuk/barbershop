@@ -1,21 +1,29 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Men's Barbershop</title>
-    <link rel="stylesheet" type="text/css" href="<?=base_url('assets/css/book/book_style.css');?>">
-    <link rel="stylesheet" href="<?=base_url('assets/fontawesome/css/all.css');?>">
-</head>
-<body>
+<article id="Services">
+    <h2>Selamat Datang, mau pilih apa?</h2>
 
-<header>
-    <div id="Home" class="hdr" style="margin-left: 20px;">      
-        <img src="<?=base_url('assets/img/lp/logo.png');?>" alt="logo" height="70px"> 
+    <div class="Service">
+
+            <div class="srv haircut">
+            <img src="<?=base_url('assets/img/lp/haircut1.png');?>" alt="haircut">
+                <div class="desc_srv">
+                    <p>Haircut</p>
+                </div>
+            </div>
+            
+            <div class="srv shave" style="margin-top: -20px; ">
+                <img src="<?=base_url('assets/img/lp/shave1.png');?>" alt="shave">
+                <div class="desc_srv">
+                    <p style="margin-top: 0px ;">Shave</p>
+                </div>
+            </div>
+            
+            <div class="srv coloring" style="">
+                <img src="<?=base_url('assets/img/lp/coloring1.png');?>" alt="coloring">
+                <div class="desc_srv">
+                    <p style="padding-top: 5px;">Coloring</p>
+                </div>
+            </div>
+            
     </div>
-    
-    <div class="hdr" style="float: right; margin: 16px 20px 0 0">
-        <i class="Button"><a href="<?= base_url('#'); ?>">Log out</a></i>
-    </div>
-</header>
+</article>
+

@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f2f2;
+}
+
+a {
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.log_out {
+    float: right;
+    margin: 0 50px;
+}
+
+.Button {
+    color: white;
+    background-color: #640303;
+    padding: 10px 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.Button p{
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.srv p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Service {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    height: 500px;
+}
+
+.srv {
+    float: left;
+    margin-right: 70px;
+    height: 300px;
+}
+
+.srv:hover{
+    background-color: rgba(212, 212, 212, 0.7);
+}
+
+.shave {
+    padding-top: 25px;
+}
+
+.shave p{
+    padding-top: 20px ;
+}
+
+
+.sosmed {
+    float: right;
+    width: 50%;
+    color: #ffffff;
+    padding: 0;
+}
+
+.sosmed h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+}
+
+.fa {
+    float: left;
+    margin-right: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    float: left;
+    width: 50%;
+    padding: 40px 0 40px 30px;
+}
+
+footer {
+    height: 150px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: lighter;
+}
