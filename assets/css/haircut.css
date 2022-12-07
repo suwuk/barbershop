@@ -1,0 +1,57 @@
+/* haircut */
+#Haircuts {
+    display: flex;
+    flex-direction: column;
+}
+
+.haircut {
+    display: flex;
+    padding: 0 50px;
+}
+
+.line1 {
+    margin-top: 40px;
+
+}
+
+.hair {
+    height: 500px;
+    border-radius: 45px;
+    background-color: #d9d9d9;
+    margin: 20px 20px;
+    flex-basis: 25%;
+    padding-left: 20px;
+    box-shadow: 2px 5px 10px rgb(68, 68, 68);
+}
+
+.hair:hover {
+    color: #dadada;
+    background-color: #8d8d8d;
+    margin-top: 10px;
+}
+
+.last {
+    margin: 0 auto;
+}
+
+.button {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #367AFF;
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.pilih{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

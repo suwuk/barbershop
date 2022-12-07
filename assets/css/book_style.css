@@ -16,6 +16,10 @@ body {
 a {
     transition: all 0.5s;
     text-decoration: none;
+    color: #000000;
+}
+
+.log_out a {
     color: #ffffff;
 }
 
@@ -81,6 +85,8 @@ h2 {
 }
 
 
+
+/* Footer  */
 .sosmed {
     float: right;
     width: 50%;

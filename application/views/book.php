@@ -3,11 +3,13 @@
 
     <div class="Service">
 
-            <div class="srv haircut">
-            <img src="<?=base_url('assets/img/lp/haircut1.png');?>" alt="haircut">
+            <div class="srv">
+                <a href="<?=base_url('book/haircut');?>">
+                <img src="<?=base_url('assets/img/lp/haircut1.png');?>" alt="haircut">
                 <div class="desc_srv">
                     <p>Haircut</p>
                 </div>
+                </a>
             </div>
             
             <div class="srv shave" style="margin-top: -20px; ">
@@ -17,7 +19,7 @@
                 </div>
             </div>
             
-            <div class="srv coloring" style="">
+            <div class="srv coloring">
                 <img src="<?=base_url('assets/img/lp/coloring1.png');?>" alt="coloring">
                 <div class="desc_srv">
                     <p style="padding-top: 5px;">Coloring</p>

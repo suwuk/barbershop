@@ -1,12 +1,11 @@
-<article id="Products">
-              <h2>Produk</h2>
-              <div class="Product">
-                     <div class="Helm">
+<article id="Haircuts">
+              <h2>Mau gaya rambut apa?</h2>
+              <div class="haircut line1">
+                     <div class="hair">
                             <div class="icon">
                                    <img src="<?=base_url('assets/img/haircut/buzzcut.png');?>" alt="">
                             </div>
-                            
-                            
+
                             <div class="nameser">
                                    <p>Model rambut</p>
                             </div>
@@ -15,69 +14,216 @@
                                    <h3>Buzzcut</h3>
                             </div>
 
-                            <div class="content jenis">
+                            <div class="content harga">
                                    <h3>55K</h3>
                             </div>
 
                             <div class="content button">
-                                   <i class=""></i>
+                                   <div class="pilih">Pilih</div>
                             </div> 
                      </div>
 
-                     <div class="Helm">
+                     <div class="hair">
                             <div class="icon">
-                                   <img src="assets\image\RSV FFC21\HELM RSV FFC21 FIBER COMPOSITE POISON RED GLOSSY.png"  width="200px" alt="">
+                                   <img src="<?=base_url('assets/img/haircut/comma_hair.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
                             </div>
                             
-                            
-                            <div class="judul">
-                                   <h4>HELM RSV FFC21 FIBER COMPOSITE POISON RED GLOSSY</h4>
+                            <div class="content jenis">
+                                   <h3>Comma hair</h3>
                             </div>
-                            
+
                             <div class="content harga">
-                                   <p>IDR 1.799K</p>
+                                   <h3>55K</h3>
                             </div>
 
                             <div class="content button">
-                                   <span class="order" onclick="order()">Buy Now</span>
-                            </div>
-                     </div>
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>     
 
-                     <div class="Helm">
+                     <div class="hair">
                             <div class="icon">
-                                   <img src="assets\image\RSV FFC21\HELM RSV FFC21 FIBER COMPOSITE BLUE MATTE.png"  width="200px" alt="">
+                                   <img src="<?=base_url('assets/img/haircut/french_crop.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
                             </div>
                             
-                            
-                            <div class="judul">
-                                   <h4>HELM RSV FFC21 FIBER COMPOSITE BLUE MATTE</h4>
+                            <div class="content jenis">
+                                   <h3>French crop</h3>
                             </div>
-                            
+
                             <div class="content harga">
-                                   <p>IDR 1.699K</p>
+                                   <h3>55K</h3>
                             </div>
 
                             <div class="content button">
-                                   <span class="order" onclick="order()">Buy Now</span>
-                            </div>
-                     </div>
-                     
-                     <div class="Helm">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>      
+
+                     <div class="hair">
                             <div class="icon">
-                                   <img src="assets\image\RSV FFC21\HELM RSV FFC21 FIBER COMPOSITE BLACK DOFF.png"  width="200px" alt="">
+                                   <img src="<?=base_url('assets/img/haircut/middle_part.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
                             </div>
                             
-                            
-                            <div class="judul">
-                                   <h4>HELM RSV FFC21 FIBER COMPOSITE BLACK DOFF</h4>
+                            <div class="content jenis">
+                                   <h3>Middle part</h3>
                             </div>
-                            
+
                             <div class="content harga">
-                                   <p>IDR 1.699K</p>
+                                   <h3>55K</h3>
                             </div>
 
                             <div class="content button">
-                                   <span class="order" onclick="order()">Buy Now</span>
-                            </div>
-                     </div>
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>      
               </div>
+
+              <div class="haircut">
+                     <div class="hair">
+                            <div class="icon">
+                                   <img src="<?=base_url('assets/img/haircut/mullet.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
+                            </div>
+                            
+                            <div class="content jenis">
+                                   <h3>Mullet</h3>
+                            </div>
+
+                            <div class="content harga">
+                                   <h3>70K</h3>
+                            </div>
+
+                            <div class="content button">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>
+
+                     <div class="hair">
+                            <div class="icon">
+                                   <img src="<?=base_url('assets/img/haircut/pompadour.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
+                            </div>
+                            
+                            <div class="content jenis">
+                                   <h3>Pompadour</h3>
+                            </div>
+
+                            <div class="content harga">
+                                   <h3>50K</h3>
+                            </div>
+
+                            <div class="content button">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>       
+
+                     <div class="hair">
+                            <div class="icon">
+                                   <img src="<?=base_url('assets/img/haircut/quiff.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
+                            </div>
+                            
+                            <div class="content jenis">
+                                   <h3>Quiff</h3>
+                            </div>
+
+                            <div class="content harga">
+                                   <h3>50K</h3>
+                            </div>
+
+                            <div class="content button">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>      
+
+                     <div class="hair">
+                            <div class="icon">
+                                   <img src="<?=base_url('assets/img/haircut/rockabilly.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
+                            </div>
+                            
+                            <div class="content jenis">
+                                   <h3>Rockabilly</h3>
+                            </div>
+
+                            <div class="content harga">
+                                   <h3>65K</h3>
+                            </div>
+
+                            <div class="content button">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>        
+              </div>
+
+              <div class="haircut last">
+                     <div class="hair">
+                            <div class="icon">
+                                   <img src="<?=base_url('assets/img/haircut/two_block.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
+                            </div>
+                            
+                            <div class="content jenis">
+                                   <h3>Two block</h3>
+                            </div>
+
+                            <div class="content harga">
+                                   <h3>58K</h3>
+                            </div>
+
+                            <div class="content button">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>
+
+                     <div class="hair">
+                            <div class="icon">
+                                   <img src="<?=base_url('assets/img/haircut/undercut.png');?>" alt="">
+                            </div>
+
+                            <div class="nameser">
+                                   <p>Model rambut</p>
+                            </div>
+                            
+                            <div class="content jenis">
+                                   <h3>Undercut</h3>
+                            </div>
+
+                            <div class="content harga">
+                                   <h3>58K</h3>
+                            </div>
+
+                            <div class="content button">
+                                   <div class="pilih">Pilih</div>
+                            </div> 
+                     </div>       
+     
+              </div>
+</article>
