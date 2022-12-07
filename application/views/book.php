@@ -13,10 +13,12 @@
             </div>
             
             <div class="srv shv" style="margin-top: -20px; ">
+                <a href="<?=base_url('book/shave');?>">
                 <img src="<?=base_url('assets/img/lp/shave1.png');?>" alt="shave">
                 <div class="desc_srv">
                     <p style="margin-top: 0px ;">Shave</p>
                 </div>
+                </a>
             </div>
             
             <div class="srv clr">

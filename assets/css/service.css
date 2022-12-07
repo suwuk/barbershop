@@ -1,15 +1,15 @@
-/* haircut */
-#Haircuts,#Colorings {
+/* service */
+#Haircuts,#Colorings,#Shaves {
     display: flex;
     flex-direction: column;
 }
 
-.haircut,.coloring {
+.haircut,.coloring,.shave {
     display: flex;
     padding: 0 50px;
 }
 
-.coloring {
+.coloring,.shave {
     margin: 0 auto;
 }
 
@@ -18,17 +18,17 @@
 
 }
 
-.hair,.color {
+.hair,.color,.shave1 {
     height: 500px;
     border-radius: 45px;
     background-color: #d9d9d9;
     margin: 20px 20px;
     flex-basis: 25%;
-    padding-left: 20px;
+    padding: 0 20px;
     box-shadow: 2px 5px 10px rgb(68, 68, 68);
 }
 
-.hair:hover,.color:hover {
+.hair:hover,.color:hover,.shave1:hover {
     color: #dadada;
     background-color: #8d8d8d;
     margin-top: 10px;

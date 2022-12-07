@@ -22,4 +22,11 @@ class Book extends CI_Controller {
 		$this->load->view('v_coloring.php');
 		$this->load->view('v_footer.php');
 	}
+
+	public function shave()
+	{
+		$this->load->view('v_header.php');
+		$this->load->view('v_shave.php');
+		$this->load->view('v_footer.php');
+	}
 }
