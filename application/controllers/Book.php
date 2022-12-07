@@ -37,5 +37,12 @@ class Book extends CI_Controller {
 		$this->load->view('v_footer.php');
 	}
 
+	public function confirm()
+	{
+		$this->load->view('v_header.php');
+		$this->load->view('v_confirm_book.php');
+		$this->load->view('v_footer.php');
+	}
+
 
 }

@@ -89,3 +89,46 @@
     justify-content: center;
     height: 100%;
 }
+
+.cnf p{
+    text-align: center;
+}
+.cnf {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 3px solid #000000;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+.isi {
+    width: 70%;
+}
+
+.cnf input{
+    border-radius: 20px;
+    border: none;
+    background-color: #d9d9d9;
+    height: 30px;
+    padding: 10px;
+}
+
+.cnf input:focus {
+    outline: none;
+}
+
+textarea {
+    border: 3px inset #929292;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.confirm {
+    padding-bottom: 100px;
+}
