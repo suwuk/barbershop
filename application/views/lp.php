@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav>  
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a>Book</a></li>
+                <li><a href="<?=base_url('book');?>">Book</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#Products">Product</a></li>
                 <li><a href="#Hair_Artist">Hair Artist</a></li>
@@ -29,9 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </nav> 
     </div>
     
-    <div class="hdr" style="float: right; margin: 16px 20px 0 0">
-        <i class="Button"><a href="<?= base_url('landingpage/registrasi'); ?>">Register</a></i>
-        <i class="Button"><a href="<?= base_url('landingpage/login'); ?>">Log in</a></i>
+    <div class="hdrk" style="float: right; margin: 16px 20px 0 0">
+        <a href="<?=base_url('autentifikasi/registrasi');?>" class="Button">Register</a>
+        <a href="<?=base_url('autentifikasi');?>" class="Button">Log in</a>
     </div>
 </header>
 

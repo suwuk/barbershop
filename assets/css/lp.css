@@ -55,16 +55,9 @@ nav a:hover {
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 5px rgb(0, 0, 0);
     font-weight: bold;
     margin-right: 8px;
 }
-  
-.Button:active {
-  position: relative;
-  top: 6px;
-  box-shadow: none;
-} 
 
 #Home {
     position: relative;
@@ -83,7 +76,7 @@ nav a:hover {
     width: 189px;
     height: 44px;
     background-color: #ffffff;
-    opacity: 62%;
+    /* opacity: 62%; */
 }
 
 .Services h2 {

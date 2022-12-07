@@ -29,4 +29,13 @@ class Book extends CI_Controller {
 		$this->load->view('v_shave.php');
 		$this->load->view('v_footer.php');
 	}
+
+	public function hairartist()
+	{
+		$this->load->view('v_header.php');
+		$this->load->view('v_hairartist.php');
+		$this->load->view('v_footer.php');
+	}
+
+
 }

@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="content button">
-                                   <div class="pilih">Pilih</div>
+                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>
               </div>
