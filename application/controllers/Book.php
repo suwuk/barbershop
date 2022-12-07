@@ -15,4 +15,11 @@ class Book extends CI_Controller {
 		$this->load->view('v_haircut.php');
 		$this->load->view('v_footer.php');
 	}
+
+	public function coloring()
+	{
+		$this->load->view('v_header.php');
+		$this->load->view('v_coloring.php');
+		$this->load->view('v_footer.php');
+	}
 }

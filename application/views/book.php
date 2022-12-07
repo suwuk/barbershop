@@ -12,18 +12,20 @@
                 </a>
             </div>
             
-            <div class="srv shave" style="margin-top: -20px; ">
+            <div class="srv shv" style="margin-top: -20px; ">
                 <img src="<?=base_url('assets/img/lp/shave1.png');?>" alt="shave">
                 <div class="desc_srv">
                     <p style="margin-top: 0px ;">Shave</p>
                 </div>
             </div>
             
-            <div class="srv coloring">
+            <div class="srv clr">
+                <a href="<?=base_url('book/coloring');?>">
                 <img src="<?=base_url('assets/img/lp/coloring1.png');?>" alt="coloring">
                 <div class="desc_srv">
                     <p style="padding-top: 5px;">Coloring</p>
                 </div>
+                </a>
             </div>
             
     </div>
