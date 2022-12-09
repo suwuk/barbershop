@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=shave&price=35k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>
               </div>
