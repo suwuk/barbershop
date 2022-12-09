@@ -23,19 +23,19 @@
                                     </tr>
                                     <tr>
                                         <td>Service</td>
-                                        <td>:  </td>
+                                        <td>:  <?= $_GET['service'] ?></td>
                                     </tr>
                                     <tr>
                                         <td>Type</td>
-                                        <td>:  </td>
+                                        <td>:  <?= $_GET['type'] ?></td>
                                     </tr>
                                     <tr>
                                         <td>Hair artist</td>
-                                        <td>:  </td>
+                                        <td>:  <?= $_GET['hairartist'] ?></td>
                                     </tr>
                                     <tr>
                                         <td>Price</td>
-                                        <td>:  </td>
+                                        <td>:  <?= $_GET['price'] ?></td>
                                     </tr>
                                     <tr>
                                         <td>Date</td>

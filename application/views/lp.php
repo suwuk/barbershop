@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav>  
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="<?=base_url('book');?>">Book</a></li>
+                <li><a href="<?=base_url('autentifikasi');?>">Book</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#Products">Product</a></li>
                 <li><a href="#Hair_Artist">Hair Artist</a></li>

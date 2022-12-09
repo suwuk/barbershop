@@ -2,12 +2,21 @@
 
 class Book extends CI_Controller {
 
+	// public function __construct()
+	// {
+	// 	parent::__construct();
+	// 	$this->load->model('modelservices');
+	// }
+
+	
+
 	public function index()
 	{
-		$this->load->view('v_header.php');
+		$this->load->view('v_header.php',);
 		$this->load->view('book.php');
 		$this->load->view('v_footer.php');
 	}
+
 
 	public function haircut()
 	{

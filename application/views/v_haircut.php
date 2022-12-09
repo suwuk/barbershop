@@ -18,8 +18,8 @@
                                    <h3>55K</h3>
                             </div>
 
-                            <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                            <div class="content button">                                   
+                                   <a href="<?= base_url()?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>
 
@@ -41,7 +41,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=comma hair&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>     
 
@@ -63,7 +63,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>      
 
@@ -85,7 +85,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>      
               </div>
@@ -109,7 +109,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>
 
@@ -131,7 +131,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>       
 
@@ -153,7 +153,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>      
 
@@ -175,7 +175,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>        
               </div>
@@ -199,7 +199,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>
 
@@ -221,7 +221,7 @@
                             </div>
 
                             <div class="content button">
-                                   <a href="<?=base_url('book/hairartist');?>"><div class="pilih">Pilih</div></a>
+                                   <a href="<?= base_url() ?>book/hairartist?type=buzzcut&price=55k&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
                             </div> 
                      </div>       
      

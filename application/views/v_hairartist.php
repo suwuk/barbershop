@@ -3,37 +3,37 @@
               <div class="hair_artist line1">
                      <div class="hrart">
                             <div class="icon">
-                                  <a href="<?=base_url('book/confirm');?>"> <img src="<?=base_url('assets/img/hairartist/aldi.png');?>" alt=""></a>
+                                  <a href="<?= base_url() ?>book/confirm?hairartist=aldi&type=<?= $_GET['type'] ?>&price=<?= $_GET['price'] ?>&service=<?= $_GET['service'] ?>"> <img src="<?=base_url('assets/img/hairartist/aldi.png');?>" alt=""></a>
                             </div>
                      </div>
 
                      <div class="hrart">
                             <div class="icon">
-                                   <a href="<?=base_url('book/confirm');?>"><img src="<?=base_url('assets/img/hairartist/diaz.png');?>" alt=""></a>
+                                   <a href="<?=base_url();?>book/confirm?hairartist=aldi&type=<?= $_GET['type'] ?>&price=<?= $_GET['price'] ?>&service=<?= $_GET['service'] ?>"><img src="<?=base_url('assets/img/hairartist/diaz.png');?>" alt=""></a>
                             </div>
                      </div>
 
                      <div class="hrart">
                             <div class="icon">
-                                   <a href="<?=base_url('book/confirm');?>"><img src="<?=base_url('assets/img/hairartist/dimas.png');?>" alt=""></a>
+                                   <a href="<?=base_url();?>book/confirm?hairartist=aldi&type=<?= $_GET['type'] ?>&price=<?= $_GET['price'] ?>&service=<?= $_GET['service'] ?>"><img src="<?=base_url('assets/img/hairartist/dimas.png');?>" alt=""></a>
                             </div>
                      </div>
 
                      <div class="hrart">
                             <div class="icon">
-                                   <a href="<?=base_url('book/confirm');?>"><img src="<?=base_url('assets/img/hairartist/satria.png');?>" alt=""></a>
+                                   <a href="<?=base_url();?>book/confirm?hairartist=aldi&type=<?= $_GET['type'] ?>&price=<?= $_GET['price'] ?>&service=<?= $_GET['service'] ?>"><img src="<?=base_url('assets/img/hairartist/satria.png');?>" alt=""></a>
                             </div>
                      </div>
 
                      <div class="hrart">
                             <div class="icon">
-                                   <a href="<?=base_url('book/confirm');?>"><img src="<?=base_url('assets/img/hairartist/vinaro.png');?>" alt=""></a>
+                                   <a href="<?=base_url();?>book/confirm?hairartist=aldi&type=<?= $_GET['type'] ?>&price=<?= $_GET['price'] ?>&service=<?= $_GET['service'] ?>"><img src="<?=base_url('assets/img/hairartist/vinaro.png');?>" alt=""></a>
                             </div>
                      </div>
 
                      <div class="hrart">
                             <div class="icon">
-                                   <a href="<?=base_url('book/confirm');?>"><img src="<?=base_url('assets/img/hairartist/rina.png');?>" alt=""></a>
+                                   <a href="<?=base_url();?>book/confirm?hairartist=aldi&type=<?= $_GET['type'] ?>&price=<?= $_GET['price'] ?>&service=<?= $_GET['service'] ?>"><img src="<?=base_url('assets/img/hairartist/rina.png');?>" alt=""></a>
                             </div>
                      </div>
               </div>
