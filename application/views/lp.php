@@ -38,9 +38,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <main>
     <article id="Home">
         <img src="<?=base_url('assets/img/lp/banner.png');?>" alt="logo" width="100%">
+        <a href="<?= base_url('autentifikasi/logout'); ?>">
         <div id="Book">
             <p align = center style="font-weight: bold;" >Book</p>
-        </div>
+        </div></a>
     </article>
 
     <article id="Services" class="Services">

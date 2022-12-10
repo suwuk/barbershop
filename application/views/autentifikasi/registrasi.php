@@ -6,9 +6,9 @@
             <div class="col-lg">
                <div class="p-5">
                   <div class="text-center">
-                     <h1 class="h4 text-gray-900 mb4">Daftar Menjadi Member!</h1>
+                     <h1 class="h4 text-gray-900 mb4">Registrasi</h1>
                   </div>
-                  <form class="user" method="post" action="<?= base_url('autentifikasi/registrasi'); ?>">
+                  <form class="user" method="post" action="<?= base_url('autentifikasi/registrasi'); ?>" >
                      <div class="form-group">
                         <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= set_value('nama'); ?>">
                         <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
@@ -27,7 +27,7 @@
                            <?= form_error('password2','<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                      </div>
-                     <button type="submit" class="btn btn-primary btn-user btn-block"> Daftar Menjadi Member </button>
+                     <button type="submit" class="btn btn-dark btn-user btn-block"> Daftar Menjadi Member </button>
                   </form>
                   <hr>
                   <div class="text-center">

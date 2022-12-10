@@ -18,6 +18,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     
     <div class="log_out">
-        <p class="Button" align=center><a href="<?= base_url('#'); ?>">Log out</a></p>
+        <a href="<?= base_url('autentifikasi/logout'); ?>"><p class="Button" align=center>Log out</p></a>
     </div>
 </header>

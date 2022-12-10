@@ -37,6 +37,7 @@ class Autentifikasi extends CI_Controller
         $email = htmlspecialchars($this->input->post('email', true));
         $password = $this->input->post('password', true);
         $user = $this->ModelUser->cekData(['email' => $email])->row_array();
+
         //jika usernya ada
         if ($user) {
             //jika user sudah aktif
@@ -70,6 +71,28 @@ class Autentifikasi extends CI_Controller
             redirect('autentifikasi');
         }
     }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('email');
+        $this->session->unset_userdata('role_id');
+
+        $this->session->set_flashdata('pesan','<div class="alert alert-success alert-message" role="alert"> anda telah logout!!</div>');
+        redirect('autentifikasi');
+    }
+
+
+    public function blok()
+    {
+        $this->load->view('autentifikasi/blok');
+    }
+
+
+    public function gagal()
+    {
+        $this->load->view('autentifikasi/gagal');
+    }
+
 
     public function registrasi(){
         if ($this->session->userdata('email')) {

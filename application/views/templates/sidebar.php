@@ -1,12 +1,12 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
     <div class="sidebar-brand-icon rotate-n-15">
-        <i class="fas fa-book"></i>
+        <i class="fas fa-scissors"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">Pustaka Booking</div>
+    <div class="sidebar-brand-text mx-3">Men's Barbershop</div>
 </a>
 
 <!-- Divider -->
@@ -23,7 +23,7 @@
             <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('admin'); ?>">
                     <i class="fa fa-fw fa book"></i>
-                    <span>Dashboard</span></a>
+                    <span >Dashboard</span></a>
             </li>
         </li>
 
@@ -38,19 +38,24 @@
         <li class="nav-item active">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('buku/kategori'); ?>">
-                    <i class="fa fa-fw fa book"></i>
-                    <span>Kategori Buku</span></a>
+                <a class="nav-link pb-0" href="<?= base_url('admin/member'); ?>">
+                    <i class="fa fa-fw fa-users"></i>
+                    <span >Data User</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
-                    <i class="fa fa-fw fa book"></i>
-                    <span>Data Buku</span></a>
+                <a class="nav-link pb-0" href="<?= base_url('admin/hairartist'); ?>">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span >Data Hair Artist</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
-                    <i class="fa fa-fw fa book"></i>
-                    <span>Data Anggota</span></a>
+                <a class="nav-link pb-0" href="<?= base_url('admin/service'); ?>">
+                    <i class="fa fa-fw fa-scissors"></i>
+                    <span >Data Services</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pb-0" href="<?= base_url('admin/produk'); ?>">
+                    <i class="fa fa-fw fa-spray-can-sparkles"></i>
+                    <span >Data Produk</span></a>
             </li>
         </li>
     
@@ -63,45 +68,12 @@
         <li class="nav-item active">
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('pinjam'); ?>">
-                    <i class="fa fa-fw fa-shopping-cart"></i>
-                    <span>Data Peminjaman</span></a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('pinjam/daftarBooking'); ?>">
                     <i class="fa fa-fw fa-list"></i>
-                    <span>Data Booking</span></a>
+                    <span >Data Booking</span></a>
             </li>
         </li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider mt-3">
-
-    <div class="sidebar-heading">
-        Laporan
-    </div>
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('laporan/laporan_buku'); ?>">
-                    <i class="fa fa-fw fa-address-book"></i>
-                    <span>Laporan Data Buku</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('laporan/laporan_anggota'); ?>">
-                    <i class="fa fa-fw fa-address-book"></i>
-                    <span>Laporan Data Anggota</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('laporan/laporan_pinjam'); ?>">
-                    <i class="fa fa-fw fa-address-book"></i>
-                    <span>Laporan Peminjaman</span></a>
-            </li>
-        </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider mt-3">
 
 <!-- Sidebar Toggler (Sidebar) -->
 <div class="text-center d-none d-md-inline">
