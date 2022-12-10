@@ -48,9 +48,19 @@
                     <span >Data Hair Artist</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('admin/service'); ?>">
+                <a class="nav-link pb-0" href="<?= base_url('admin/haircut'); ?>">
                     <i class="fa fa-fw fa-scissors"></i>
-                    <span >Data Services</span></a>
+                    <span >Data Haircut</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pb-0" href="<?= base_url('admin/shave'); ?>">
+                    <i class="fa fa-fw fa-scissors"></i>
+                    <span >Data Shave</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pb-0" href="<?= base_url('admin/coloring'); ?>">
+                    <i class="fa fa-fw fa-brush"></i>
+                    <span >Data Coloring</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('admin/produk'); ?>">

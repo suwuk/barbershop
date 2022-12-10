@@ -1,6 +1,7 @@
+<?= $this->session->flashdata('pesan'); ?>
 <div class="card">
     <div class="card-header">
-        <a href="<?= base_url('user/tambah') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>Tambah siswa</a>
+        <a href="<?= base_url('admin/tambah_hairartist') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>Tambah Hair Artist</a>
     </div>
 
     <div class="card-body">

@@ -1,7 +1,7 @@
+<?= $this->session->flashdata('pesan'); ?>
 <div class="card" style="margin-bottom: 50px;">
     <div class="card-header">
-        <p>Data Haircut</p>
-        <a href="<?= base_url('user/tambah') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>Tambah Haircut</a>
+        <a href="<?= base_url('admin/tambah_produk') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i>Tambah Produk</a>
     </div>
 
     <div class="card-body">

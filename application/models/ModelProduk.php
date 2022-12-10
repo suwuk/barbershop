@@ -7,4 +7,8 @@ class ModelProduk extends CI_Model
     {
         return $this->db->get('produk');
     }
+
+    public function insert_data($data,$table){
+        $this->db->insert($table, $data);
+    }
 }

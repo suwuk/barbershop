@@ -19,4 +19,8 @@ class ModelService extends CI_Model
     public function getColoring(){
         return $this->db->get('coloring');
     }
+    
+    public function insert_data($data,$table){
+        $this->db->insert($table, $data);
+    }
 }
