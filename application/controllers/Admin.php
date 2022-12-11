@@ -99,18 +99,18 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    // public function delete_coloring($id)
-    // {
-    //     $where = array('id_booking' => $id);
-    //     $this->ModelService->delete_data($where,'coloring');
-    //     $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
-    //     Data Berhasil dihapus
-    //     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    //     <span aria-hidden="true">&times;</span>
-    //     </button>
-    //     </div>');
-    //     redirect('admin/coloring');        
-    // }
+    public function delete_book($id)
+    {
+        $where = array('id_booking' => $id);
+        $this->ModelBook->delete_data($where,'data_booking');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/book');        
+    }
  
     //Service
     public function haircut()

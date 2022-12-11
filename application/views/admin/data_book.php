@@ -1,3 +1,4 @@
+<?= $this->session->flashdata('pesan'); ?>
 <div class="card" style="margin-bottom: 50px;">
     <div class="card-body">
         <table id="example1" class= "table table-bordered table-striped">
@@ -32,7 +33,7 @@
                         <td><?= $gb->date?></td>
                         <td><?= $gb->pesan?></td>
                         <td>
-                            <a href ="<?= base_url().$gb->id_booking?>" class= "btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                            <a href ="<?= base_url('admin/delete_book/' . $gb->id_booking) ?>" class= "btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?')"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 </tbody>

@@ -53,7 +53,7 @@
                                     
                                     <tr>
                                         <td>Date</td>
-                                        <td>:  <input type="date" name="date" value=""></td>
+                                        <td>:  <input type="datetime-local" name="date" value=""></td>
                                     </tr>
                                     <?= form_error('date','<div class="text-small text-danger">','</div>'); ?>
 

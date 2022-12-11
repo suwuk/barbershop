@@ -14,8 +14,7 @@ class ModelBook extends CI_Model
 
     public function delete_data($where, $table)
     {
-        $this->db->where('id',$where['id']);
+        $this->db->where('id_booking',$where['id_booking']);
         $this->db->delete($table);
     }
-
 }
