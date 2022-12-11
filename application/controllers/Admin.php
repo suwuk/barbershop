@@ -38,6 +38,42 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function edit_member($id){
+        $this->_rules_member();
+        if($this->form_validation->run() == false){
+            $this->member();
+        }else{
+            $data = array(
+                'id' => $id,
+                'nama' => $this->input->post('nama'),
+                'email' => $this->input->post('email'),
+                'is_active' => $this->input->post('is_active')
+            );
+            $this->ModelUser->update_data($data,'user');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data Berhasil diubah
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('admin/member');
+       
+        }
+    }
+
+    public function _rules_member(){
+        $this->form_validation->set_rules('nama', 'Nama', 'required', array(
+            'required' => 'isi %s!!'
+        ));
+        $this->form_validation->set_rules('email', 'Email', 'required', array(
+            'required' => 'isi %s!!'
+        ));
+        $this->form_validation->set_rules('is_active', 'aktivasi', 'required', array(
+            'required' => 'isi %s!!'
+        ));
+    }
+
+
  
     //Service
     public function haircut()
@@ -162,6 +198,72 @@ class Admin extends CI_Controller
         }
     }
 
+    public function edit_haircut($id){
+        $this->_rules_service();
+        if($this->form_validation->run() == false){
+            $this->haircut();
+        }else{
+            $data = array(
+                'id' => $id,
+                'style' => $this->input->post('style'),
+                'harga' => $this->input->post('harga')
+            );
+            $this->ModelService->update_data($data,'haircut');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data Berhasil diubah
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('admin/haircut');
+       
+        }
+    }
+
+    public function edit_shave($id){
+        $this->_rules_service();
+        if($this->form_validation->run() == false){
+            $this->shave();
+        }else{
+            $data = array(
+                'id' => $id,
+                'style' => $this->input->post('style'),
+                'harga' => $this->input->post('harga')
+            );
+            $this->ModelService->update_data($data,'shave');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data Berhasil diubah
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('admin/shave');
+       
+        }
+    }
+
+    public function edit_coloring($id){
+        $this->_rules_service();
+        if($this->form_validation->run() == false){
+            $this->coloring();
+        }else{
+            $data = array(
+                'id' => $id,
+                'style' => $this->input->post('style'),
+                'harga' => $this->input->post('harga')
+            );
+            $this->ModelService->update_data($data,'coloring');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data Berhasil diubah
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('admin/coloring');
+       
+        }
+    }
+
     public function _rules_service(){
         $this->form_validation->set_rules('style', 'Style', 'required', array(
             'required' => 'isi %s!!'
@@ -214,6 +316,29 @@ class Admin extends CI_Controller
             </button>
             </div>');
             redirect('admin/produk');
+        }
+    }
+
+    public function edit_produk($id){
+        $this->_rules_produk();
+        if($this->form_validation->run() == false){
+            $this->produk();
+        }else{
+            $data = array(
+                'id_produk' => $id,
+                'nama_produk' => $this->input->post('nama_produk'),
+                'harga' => $this->input->post('harga'),
+                'stok' => $this->input->post('stok')
+            );
+            $this->ModelProduk->update_data($data,'produk');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data Berhasil diubah
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('admin/produk');
+       
         }
     }
 
@@ -275,6 +400,42 @@ class Admin extends CI_Controller
         }
     }
 
+    public function edit_hairartist($id){
+        $this->_rules_hairartist();
+        if($this->form_validation->run() == false){
+            $this->hairartist();
+        }else{
+            $data = array(
+                'id' => $id,
+                'nama' => $this->input->post('nama'),
+                'umur' => $this->input->post('umur'),
+                'no_telp' => $this->input->post('no_telp')
+            );
+            $this->ModelHairArtist->update_data($data,'hair_artist');
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
+            Data Berhasil diubah
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>');
+            redirect('admin/hairartist');
+       
+        }
+    }
+
+    public function delete_hairartist($id)
+    {
+        $where = array('id' => $id);
+        $this->ModelHairArtist->delete_data($where,'hair_artist');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/hairartist');        
+    }
+
     public function _rules_hairartist(){
         $this->form_validation->set_rules('nama', 'Nama', 'required', array(
             'required' => '%s harus diisi!!'
@@ -286,5 +447,6 @@ class Admin extends CI_Controller
             'required' => 'isi %s!!'
         ));
     }
+
 
 }

@@ -13,6 +13,10 @@ class ModelUser extends CI_Model
         return $this->db->get_where('user', $where);
     }
 
+    public function update_data($data,$table){
+        $this->db->where('id', $data['id']);
+        $this->db->update($table, $data);
+    }
 
     public function cekUserAccess($where = null)
     {

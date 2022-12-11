@@ -12,7 +12,7 @@
     <div class="form-group">
         <label>Nomor telepon</label>
         <input type="text" name="no_telp" class="form-control">
-        <?= form_error('nomor_telepon','<div class="text-small text-danger">','</div>'); ?>
+        <?= form_error('no_telp','<div class="text-small text-danger">','</div>'); ?>
     </div>
 
     <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-save"></i> Simpan</button>
