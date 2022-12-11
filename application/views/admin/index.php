@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('admin/service'); ?>"><i class="fas fa-scissors fa-3x text-white"></i></a>
+                            <a href=""><i class="fas fa-scissors fa-3x text-white"></i></a>
                         </div>
                     </div>
                     
