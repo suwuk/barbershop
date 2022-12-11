@@ -35,4 +35,9 @@ class ModelUser extends CI_Model
         return $this->db->get();
     }
     
+    public function delete_data($where, $table)
+    {
+        $this->db->where('id',$where['id']);
+        $this->db->delete($table);
+    }
 }

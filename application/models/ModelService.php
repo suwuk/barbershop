@@ -28,4 +28,10 @@ class ModelService extends CI_Model
         $this->db->where('id', $data['id']);
         $this->db->update($table, $data);
     }
+
+    public function delete_data($where, $table)
+    {
+        $this->db->where('id',$where['id']);
+        $this->db->delete($table);
+    }
 }

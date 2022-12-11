@@ -16,4 +16,10 @@ class ModelProduk extends CI_Model
         $this->db->where('id_produk', $data['id_produk']);
         $this->db->update($table, $data);
     }
+
+    public function delete_data($where, $table)
+    {
+        $this->db->where('id_produk',$where['id_produk']);
+        $this->db->delete($table);
+    }
 }

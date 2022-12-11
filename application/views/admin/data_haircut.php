@@ -24,7 +24,7 @@
                         <td><?= $gth->harga?></td>
                         <td>
                             <button data-toggle="modal" data-target="#edit<?= $gth->id?>" class= "btn btn-warning btn-sm"><i class="fas fa-edit"></i></button>
-                            <a href ="" class= "btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                            <a href ="<?= base_url('admin/delete_haircut/' . $gth->id) ?>" class= "btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?')"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 </tbody>
@@ -39,7 +39,7 @@
   <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Edit Hair Artist</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Edit Haircut</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>

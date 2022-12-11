@@ -61,6 +61,19 @@ class Admin extends CI_Controller
         }
     }
 
+    public function delete_member($id)
+    {
+        $where = array('id' => $id);
+        $this->ModelUser->delete_data($where,'user');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/member');        
+    }
+
     public function _rules_member(){
         $this->form_validation->set_rules('nama', 'Nama', 'required', array(
             'required' => 'isi %s!!'
@@ -264,6 +277,49 @@ class Admin extends CI_Controller
         }
     }
 
+    
+    public function delete_haircut($id)
+    {
+        $where = array('id' => $id);
+        $this->ModelService->delete_data($where,'haircut');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/haircut');        
+    }
+
+    public function delete_shave($id)
+    {
+        $where = array('id' => $id);
+        $this->ModelService->delete_data($where,'shave');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/shave');        
+    }
+
+    public function delete_coloring($id)
+    {
+        $where = array('id' => $id);
+        $this->ModelService->delete_data($where,'coloring');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/coloring');        
+    }
+
+    
+   
+
     public function _rules_service(){
         $this->form_validation->set_rules('style', 'Style', 'required', array(
             'required' => 'isi %s!!'
@@ -340,6 +396,19 @@ class Admin extends CI_Controller
             redirect('admin/produk');
        
         }
+    }
+
+    public function delete_produk($id)
+    {
+        $where = array('id_produk' => $id);
+        $this->ModelProduk->delete_data($where,'produk');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Data Berhasil dihapus
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>');
+        redirect('admin/produk');        
     }
 
     public function _rules_produk(){
