@@ -34,4 +34,5 @@ class ModelService extends CI_Model
         $this->db->where('id',$where['id']);
         $this->db->delete($table);
     }
+   
 }

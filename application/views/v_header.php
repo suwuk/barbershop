@@ -7,7 +7,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Men's Barbershop</title>
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/css/book_style.css');?>">
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/css/service.css');?>">
-
     <link rel="stylesheet" href="<?=base_url('assets/fontawesome/css/all.css');?>">
 </head>
 <body>

@@ -61,11 +61,11 @@
                             <div class="text-md font-weight-bold text-white text-uppercase mb-1">Data booking
                             </div>
                             <div class="h1 mb-0 font-weight-bold text-white">
-                            <?= $this->ModelHairArtist->getHairArtist('nama')->num_rows(); ?>
+                            <?= $this->ModelBook->getBook('id')->num_rows(); ?>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('user'); ?>"><i class="fas fa-shopping-cart fa-3x text-white"></i></a>
+                            <a href="<?= base_url('admin/book'); ?>"><i class="fas fa-shopping-cart fa-3x text-white"></i></a>
                         </div>
                     </div>
                 </div>

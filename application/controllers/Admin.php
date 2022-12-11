@@ -86,7 +86,31 @@ class Admin extends CI_Controller
         ));
     }
 
+    //booking
+    public function book()
+    {
+        $data['us'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array(); 
+        $data['judul'] = 'Data Booking';
+        $data['getbook'] = $this->ModelBook->getBook()->result(); 
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar',$data);
+        $this->load->view('admin/data_book', $data);
+        $this->load->view('templates/footer');
+    }
 
+    // public function delete_coloring($id)
+    // {
+    //     $where = array('id_booking' => $id);
+    //     $this->ModelService->delete_data($where,'coloring');
+    //     $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    //     Data Berhasil dihapus
+    //     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    //     <span aria-hidden="true">&times;</span>
+    //     </button>
+    //     </div>');
+    //     redirect('admin/coloring');        
+    // }
  
     //Service
     public function haircut()
@@ -316,9 +340,6 @@ class Admin extends CI_Controller
         </div>');
         redirect('admin/coloring');        
     }
-
-    
-   
 
     public function _rules_service(){
         $this->form_validation->set_rules('style', 'Style', 'required', array(
