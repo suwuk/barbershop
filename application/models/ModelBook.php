@@ -17,4 +17,9 @@ class ModelBook extends CI_Model
         $this->db->where('id_booking',$where['id_booking']);
         $this->db->delete($table);
     }
+
+    public function getBookByUser($where)
+    {  
+        return $this->db->get_where('data_booking', $where); 
+    }
 }

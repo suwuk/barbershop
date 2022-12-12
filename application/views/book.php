@@ -2,7 +2,6 @@
     <h2>Selamat Datang, mau pilih apa?</h2>
 
     <div class="Service">
-
             <div class="srv">
                 <a href="<?=base_url('book/haircut?service=haircut');?>">
                 <img src="<?=base_url('assets/img/lp/haircut1.png');?>" alt="haircut">

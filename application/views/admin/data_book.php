@@ -13,7 +13,6 @@
                     <th>hair artist</th>
                     <th>price</th>
                     <th>date</th>
-                    <th>pesan</th>
                     <th>action</th>
 
                 </tr>
@@ -31,7 +30,6 @@
                         <td><?= $gb->hair_artist?></td>
                         <td><?= $gb->price?></td>
                         <td><?= $gb->date?></td>
-                        <td><?= $gb->pesan?></td>
                         <td>
                             <a href ="<?= base_url('admin/delete_book/' . $gb->id_booking) ?>" class= "btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data ini?')"><i class="fas fa-trash"></i></a>
                         </td>
