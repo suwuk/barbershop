@@ -1,4 +1,3 @@
-
 <div class="tabels">
     <div class="tabel_judul">
         <h2>Bookingan Saya</h2>
@@ -15,7 +14,6 @@
                     <th>Date</th>
                     <th>Menu</th>
                 </tr>
-
             </thead>
 
             <tbody>
@@ -33,13 +31,9 @@
                         <div class="detail">
                             <a href="<?= site_url('book/detail_book/'.$books->id_booking)?>">Detail</a>
                         </div>
-                    </td>
-                
+                    </td>    
                 </tr>
-                
-
-                <?php endforeach?>
-                
+                <?php endforeach?>                 
             </tbody>
         </table>
     </div>

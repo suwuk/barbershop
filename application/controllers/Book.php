@@ -61,7 +61,6 @@ class Book extends CI_Controller {
 
 	public function haircut()
 	{
-        $haircut = 
 		$this->load->view('v_header.php');
 		$this->load->view('v_haircut.php');
 		$this->load->view('v_footer.php');
