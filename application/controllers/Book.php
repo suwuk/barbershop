@@ -61,22 +61,28 @@ class Book extends CI_Controller {
 
 	public function haircut()
 	{
+        $haircut = $this->ModelService->getHaircut()->result();
+        $data['haircut'] = $haircut;
 		$this->load->view('v_header.php');
-		$this->load->view('v_haircut.php');
+		$this->load->view('v_haircut.php',$data);
 		$this->load->view('v_footer.php');
 	}
-
+    
 	public function coloring()
 	{
+        $coloring = $this->ModelService->getColoring()->result();
+        $data['coloring'] = $coloring;
 		$this->load->view('v_header.php');
-		$this->load->view('v_coloring.php');
+		$this->load->view('v_coloring.php',$data);
 		$this->load->view('v_footer.php');
 	}
-
+    
 	public function shave()
 	{
+        $shave = $this->ModelService->getShave()->result();
+        $data['shave'] = $shave;
 		$this->load->view('v_header.php');
-		$this->load->view('v_shave.php');
+		$this->load->view('v_shave.php',$data);
 		$this->load->view('v_footer.php');
 	}
 
@@ -96,10 +102,6 @@ class Book extends CI_Controller {
 	}
 
 	public function tambah_book(){
-        $this->_rules_service();
-        if($this->form_validation->run() == false){
-            $this->confirm();
-        }else{        
                 $data = array(
                     'name' => $this->input->post('name'),
                     'email' => $this->input->post('email'),
@@ -111,36 +113,8 @@ class Book extends CI_Controller {
                     'date' => $this->input->post('date'),
                 );
                 $this->ModelBook->insert_data($data,'data_booking');
-                $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data Berhasil ditambahkan
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-                </div>');
-                redirect('book/index');        
-        }
+                redirect('book');        
+        
     }
-
-	public function _rules_service(){
-        $this->form_validation->set_rules('name', 'Name', 'required', array(
-            'required' => 'isi %s!!'
-        ));
-        $this->form_validation->set_rules('email', 'email', 'required', array(
-            'required' => 'isi %s!!'
-        ));
-        $this->form_validation->set_rules('phone', 'phone', 'required', array(
-            'required' => 'isi %s!!'
-        ));
-        $this->form_validation->set_rules('service', 'Service', 'required', array(
-            'required' => 'isi %s!!'
-        ));
-        $this->form_validation->set_rules('type', 'Type', 'required', array(
-            'required' => 'isi %s!!'
-        ));
-        $this->form_validation->set_rules('price', 'Price', 'required', array(
-            'required' => 'isi %s!!'
-        ));
-    }
-
 
 }

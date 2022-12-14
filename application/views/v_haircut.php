@@ -1,230 +1,29 @@
 <article id="Haircuts">
               <h2>Mau gaya rambut apa?</h2>
               <div class="haircut line1">
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/buzzcut.png');?>" alt="">
-                            </div>
+                     <?php foreach($haircut as $haircuts) : ?>             
+                            <div class="hair">
+                                   <div class="icon">
+                                          <img src="<?=base_url('assets/img/haircut/'.$haircuts->img);?>" alt="">
+                                   </div>
 
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   
-                                   <h3>Buzzcut</h3>
-                            </div>
+                                   <div class="nameser">
+                                          <p>Model rambut</p>
+                                   </div>
 
-                            <div class="content harga">
-                                   <h3>55K</h3>
-                            </div>
+                                   <div class="content jenis">
 
-                            <div class="content button">                                   
-                                   <a href="<?= base_url()?>book/hairartist?type=buzzcut&price=55000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>
+                                          <h3> <?= $haircuts->style ?> </h3>
+                                   </div>
 
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/comma_hair.png');?>" alt="">
-                            </div>
+                                   <div class="content harga">
+                                          <h3> <?= $haircuts->harga ?></h3>
+                                   </div>
 
-                            <div class="nameser">
-                                   <p>Model rambut</p>
+                                   <div class="content button">                                   
+                                          <a href="<?= base_url()?>book/hairartist?type=<?= $haircuts->style?>&price=<?= $haircuts->harga?>&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
+                                   </div> 
                             </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Comma hair</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>55K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=comma hair&price=55000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>     
-
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/french_crop.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>French crop</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>55K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=french crop&price=55000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>      
-
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/middle_part.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Middle part</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>55K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=middle part&price=55000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>      
-              </div>
-
-              <div class="haircut">
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/mullet.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Mullet</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>70K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=mullet&price=70000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>
-
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/pompadour.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Pompadour</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>50K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=pompadour&price=50000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>       
-
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/quiff.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Quiff</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>50K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=quiff&price=50000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>      
-
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/rockabilly.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Rockabilly</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>65K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=rockabilly&price=65000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>        
-              </div>
-
-              <div class="haircut last">
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/two_block.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Two block</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>58K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=two block&price=58000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>
-
-                     <div class="hair">
-                            <div class="icon">
-                                   <img src="<?=base_url('assets/img/haircut/undercut.png');?>" alt="">
-                            </div>
-
-                            <div class="nameser">
-                                   <p>Model rambut</p>
-                            </div>
-                            
-                            <div class="content jenis">
-                                   <h3>Undercut</h3>
-                            </div>
-
-                            <div class="content harga">
-                                   <h3>58K</h3>
-                            </div>
-
-                            <div class="content button">
-                                   <a href="<?= base_url() ?>book/hairartist?type=undercut&price=58000&service=<?= $_GET['service'] ?>"><div class="pilih">Pilih</div></a>
-                            </div> 
-                     </div>       
-     
+                     <?php endforeach ?>
               </div>
 </article>
