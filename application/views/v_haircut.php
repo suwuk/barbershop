@@ -1,7 +1,7 @@
 <article id="Haircuts">
               <h2>Mau gaya rambut apa?</h2>
               <div class="haircut line1">
-                     <?php foreach($haircut as $haircuts) : ?>             
+                     <?php foreach($haircut as $haircuts) : ?>           
                             <div class="hair">
                                    <div class="icon">
                                           <img src="<?=base_url('assets/img/haircut/'.$haircuts->img);?>" alt="">

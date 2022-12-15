@@ -5,6 +5,7 @@
 }
 
 .haircut,.coloring,.shave,.hair_artist {
+    overflow: auto;
     display: flex;
     padding: 0 50px;
 }
